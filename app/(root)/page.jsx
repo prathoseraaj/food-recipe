@@ -30,7 +30,7 @@ const page = () => {
       {loading ? (
         <div>loading</div>
       ) : (
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap gap-5">
           {catagories.length > 0 ? ( catagories.map((catagory, index) => (
             <FoodCard key={index} catagory={catagory}/>
           ))) : <div>Error! Catogories not found</div>}

@@ -4,12 +4,12 @@ import React from "react";
 const FoodCard = ({catagory}) => {
   return (
     <div className="rounded flex flex-col items-center  w-[225px] max-h-[50%] shadow-md overflow-hidden h-50vh  ">
-      <div className="relative h-[250px] w-[225px] ">
+      <div className="relative h-[150px] w-[200px] ">
         <Image
           src={catagory.strCategoryThumb}
           alt="Delicious food"
           fill
-          className="object-cover"
+          className=""
           sizes="200px"
         />
       </div>
