@@ -5,8 +5,8 @@ export const fetchcategory = async() =>{
     return data.categories;
 }
 
-export const fetchfoods = async (catagoryname) => {
-    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${catagoryname}`);
+export const fetchfoods = async (catagoryName) => {
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${catagoryName}`);
     const data = await response.json();
     console.log(data.meals);
     return data.meals;
