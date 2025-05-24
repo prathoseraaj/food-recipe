@@ -5,6 +5,13 @@ export const fetchcategory = async() =>{
     return data.categories;
 }
 
+export const fetchfoods = async (catagoryname) => {
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${catagoryname}`);
+    const data = await response.json();
+    console.log(data.meals);
+    return data.meals;
+}
+
 export const fetchfoodrecipe = async (query) =>{
     const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
     const data = await response.json();
@@ -12,4 +19,4 @@ export const fetchfoodrecipe = async (query) =>{
     return data;
 }
 
-fetchfoodrecipe("biryani");
+fetchfoods("Beef");
