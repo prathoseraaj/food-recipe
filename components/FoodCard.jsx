@@ -18,7 +18,7 @@ const FoodCard = ({meal, catagory, handleCatagory}) => {
         />
       </div>
       <div className=" flex flex-row gap-5 ">
-          <h1 className="font-bold text-style: italic text-[20px] " onClick={()=>handleCatagory(catagory.strCategory)}>{isCatagory?  catagory.strCategory : meal.strMeal}</h1>
+          {isCatagory?(<h1 className="font-bold text-style: italic text-[20px] " onClick={()=>handleCatagory(catagory.strCategory)}>{catagory.strCategory }</h1>):(<h1 className="font-bold text-style: italic text-[20px] ">{meal.strMeal}</h1>)}
         </div>
 
     </div>
