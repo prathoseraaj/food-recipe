@@ -46,8 +46,12 @@ const page = () => {
     <div className="flex h-[90vh] w-[100%] flex pl-10 pt-10  ">
       {loading ? (
         <div>loading</div>
-      ) : selectedCatagory? (<div>
-       <>catagory code</>
+      ) : selectedCatagory? (
+               <div className="flex flex-wrap gap-5">
+          {catagoryfoods.length > 0 ? ( catagoryfoods.map((meal, index) => (
+            <FoodCard key={index} meal={meal} />
+          ))) : <div>Error! Catogories foods not found</div>}
+        
       </div>):(
         <div className="flex flex-wrap gap-5">
           {catagories.length > 0 ? ( catagories.map((catagory, index) => (
