@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import FoodCard from "@/components/FoodCard";
 import React, { useEffect, useState } from "react";
@@ -17,18 +17,25 @@ const page = () => {
         setCatagories(catagorydata);
       } catch (error) {
         console.log("Error fetcning the catagory,", error);
-      }finally{
-        setLoading(flase);
+      } finally {
+        setLoading(false);
       }
     };
 
     loadingcatagories();
-
   }, []);
 
   return (
     <div className="flex h-[90vh] w-[100%] flex pl-10 pt-10  ">
-      <FoodCard />
+      {loading ? (
+        <div>loading</div>
+      ) : (
+        <div className="flex flex-wrap">
+          {catagories.length > 0 ? ( catagories.map((catagory, index) => (
+            <FoodCard key={index} catagory={catagory}/>
+          ))) : <div>Error! Catogories not found</div>}
+        </div>
+      )}
     </div>
   );
 };
