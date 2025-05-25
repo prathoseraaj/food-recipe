@@ -3,6 +3,7 @@
 import FoodCard from "@/components/FoodCard";
 import React, { useEffect, useState } from "react";
 import { fetchcategory, fetchfoods } from "@/services/api";
+import FoodDetails from "@/components/FoodDetails";
 
 const page = () => {
   const [selectedCatagory, setSelectedCatagory] = useState(null);
@@ -43,8 +44,8 @@ const page = () => {
   }, []);
 
   return (
-    <div className="flex h-[90vh] w-[100%] flex pl-10 pt-10  ">
-      {loading ? (
+    <div className="flex h-[93vh] w-[100%] flex  ">
+{/*       {loading ? (
         <div>loading</div>
       ) : selectedCatagory? (
                <div className="flex flex-wrap gap-5">
@@ -58,7 +59,8 @@ const page = () => {
             <FoodCard key={index} catagory={catagory} handleCatagory={handleCatagory}/>
           ))) : <div>Error! Catogories not found</div>}
         </div>
-      )}
+      )} */}
+      <FoodDetails/>
     </div>
   );
 };
