@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const FoodCard = ({meal, catagory, handleCatagory}) => {
+const FoodCard = ({meal, catagory, handleCatagory, handleMeal}) => {
 
   const isCatagory = catagory  && !meal;
   const isMeal = meal && !catagory;
@@ -18,7 +18,7 @@ const FoodCard = ({meal, catagory, handleCatagory}) => {
         />
       </div>
       <div className=" flex flex-row gap-5 ">
-          {isCatagory?(<h1 className="font-bold text-style: italic text-[20px] " onClick={()=>handleCatagory(catagory.strCategory)}>{catagory.strCategory }</h1>):(<h1 className="font-bold text-style: italic text-[20px] ">{meal.strMeal}</h1>)}
+          {isCatagory?(<h1 className="font-bold text-style: italic text-[20px] " onClick={()=>handleCatagory(catagory.strCategory)}>{catagory.strCategory }</h1>):(<h1 className="font-bold text-style: italic text-[20px] "onClick={()=>handleMeal(meal.strMeal)}>{meal.strMeal}</h1>)}
         </div>
 
     </div>
