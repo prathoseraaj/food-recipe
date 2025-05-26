@@ -12,11 +12,9 @@ export const fetchfoods = async (catagoryName) => {
     return data.meals;
 }
 
-export const fetchfoodrecipe = async (query) =>{
-    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${query}`);
+export const fetchfoodrecipe = async (mealName) =>{
+    const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`);
     const data = await response.json();
-    console.log(data);
-    return data;
+    console.log(data.meals);
+    return data.meals;
 }
-
-fetchfoodrecipe("Fish ");
