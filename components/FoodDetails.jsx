@@ -16,11 +16,40 @@ const FoodDetails = () => {
             <div className="h-[500px] w-[25%] bg-white shadow-lg">
                 <div className="mt-5 ml-5">
                     <h1 className="text-[17px]">Ingredients:</h1>
+                    <div>
+                      <li>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                        <ul></ul>
+                      </li>
+                    </div>
                 </div>
             </div>
             <div className="h-[500px] w-[25%] bg-white shadow-lg">
                 <div className="mt-5 ml-5">
                     <h1 className="text-[17px]">Instruction:</h1>
+                    <div>
+                      <p>
+                        
+                      </p>
+                    </div>
                 </div>
             </div>
             <div className="relative h-[300px] rounded-[10px] w-[25%] bg-white shadow-lg">

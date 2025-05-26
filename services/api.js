@@ -19,4 +19,4 @@ export const fetchfoodrecipe = async (query) =>{
     return data;
 }
 
-fetchfoodrecipe("biryani");
+fetchfoodrecipe("Fish ");
