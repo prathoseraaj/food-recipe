@@ -23,8 +23,11 @@ const FoodDetails = () => {
                     <h1 className="text-[17px]">Instruction:</h1>
                 </div>
             </div>
-            <div className="h-[300px] w-[25%] bg-white shadow-lg">
-                <Image src="">
+            <div className="relative h-[300px] rounded-[10px] w-[25%] bg-white shadow-lg">
+                <Image src="https://www.themealdb.com/images/media/meals/xrttsx1487339558.jpg"
+                alt="image"
+                fill
+                className="object-cover rounded-[10px]">
 
                 </Image>
             </div>
