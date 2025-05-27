@@ -77,7 +77,7 @@ const page = () => {
           )}
         </div>
       ) : (
-        <div className="flex flex-wrap gap-5 ml-20">
+        <div className="flex overflow-x-scroll no-scrollbar gap-5 ml-20 mr-20">
           {catagories.length > 0 ? (
             catagories.map((catagory, index) => (
               <FoodCard
