@@ -1,25 +1,33 @@
 import Image from "next/image";
 import React from "react";
 
-const FoodCard = ({meal, catagory, handleCatagory, handleMeal}) => {
-
-  const isCatagory = catagory  && !meal;
+const FoodCard = ({ meal, catagory, handleCatagory, handleMeal }) => {
+  const isCatagory = catagory && !meal;
   const isMeal = meal && !catagory;
 
   return (
-    <div className="rounded flex flex-col items-center  w-[225px] max-h-[50%] shadow-md overflow-hidden h-50vh  ">
-      <div className="relative h-[150px] w-[200px] ">
-        <Image
-          src={isCatagory? catagory.strCategoryThumb : meal.strMealThumb}
-          alt="Delicious food"
-          fill
-          className=""
-          sizes="200px"
-        />
+    <div className="rounded flex flex-col items-center   ">
+      <div className="relative h-[100px] w-[100px] ">
+        {isCatagory ? (
+          <Image
+            src={isCatagory ? catagory.strCategoryThumb : meal.strMealThumb}
+            alt="Delicious food"
+            fill
+            className="rounded-full shadow-lg object-cover"
+            sizes="200px"
+            onClick={() => handleCatagory(catagory.strCategory)}
+          />
+        ) : (
+          <Image
+            src={isCatagory ? catagory.strCategoryThumb : meal.strMealThumb}
+            alt="Delicious food"
+            fill
+            className="rounded-"
+            sizes="200px"
+            onClick={() => handleMeal(meal.strMeal)}
+          />
+        )}
       </div>
-      <div className=" flex flex-row gap-5 ">
-          {isCatagory?(<h1 className="font-bold text-style: italic text-[20px] " onClick={()=>handleCatagory(catagory.strCategory)}>{catagory.strCategory }</h1>):(<h1 className="font-bold text-style: italic text-[20px] "onClick={()=>handleMeal(meal.strMeal)}>{meal.strMeal}</h1>)}
-        </div>
 
     </div>
   );
