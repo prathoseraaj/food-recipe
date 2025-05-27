@@ -60,7 +60,7 @@ const page = () => {
   }, []);
 
   return (
-    <div className="flex h-[93vh] w-full flex-col ">
+    <div className="flex h-[93vh] w-full flex-col font-outfit ">
       <ExploreMenu/>
       {loading ? (
         <div className="ml-20">loading</div>
