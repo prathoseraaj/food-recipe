@@ -4,6 +4,7 @@ import FoodCard from "@/components/FoodCard";
 import React, { useEffect, useState } from "react";
 import { fetchcategory, fetchfoodrecipe, fetchfoods } from "@/services/api";
 import FoodDetails from "@/components/FoodDetails";
+import ExploreMenu from "@/components/ExploreMenu";
 
 const page = () => {
   const [selectedCatagory, setSelectedCatagory] = useState(null);
@@ -59,7 +60,8 @@ const page = () => {
   }, []);
 
   return (
-    <div className="flex h-[93vh] w-full  ">
+    <div className="flex h-[93vh] w-full flex-col ">
+      <ExploreMenu/>
       {loading ? (
         <div className="ml-20">loading</div>
       ) : selectedMeal ? (
