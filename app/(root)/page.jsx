@@ -62,24 +62,7 @@ const page = () => {
   return (
     <div className="flex max-h-200vh mb-10 w-full flex-col font-outfit ">
       <ExploreMenu/>
-      {loading ? (
-        <div className="ml-20">loading</div>
-      ) : selectedMeal ? (
-        
-          <FoodDetails mealDetails={mealDetails} />
-        
-      ) : selectedCatagory ? (
-        <div className="flex flex-wrap gap-5 ml-20">
-          {catagoryfoods.length > 0 ? (
-            catagoryfoods.map((meal, index) => (
-              <FoodCard key={index} meal={meal} handleMeal={handleMeal} />
-            ))
-          ) : (
-            <div>Error! Catogories foods not found</div>
-          )}
-        </div>
-      ) : (
-        <div className="flex overflow-x-scroll no-scrollbar gap-5 ml-20 mr-20">
+      <div className="flex overflow-x-scroll no-scrollbar gap-5 ml-20 mr-20">
           {catagories.length > 0 ? (
             catagories.map((catagory, index) => (
               <FoodCard
@@ -93,7 +76,23 @@ const page = () => {
             <div>Error! Catogories not found</div>
           )}
         </div>
-      )}
+      {loading ? (
+        <div className="ml-20">loading</div>
+      ) : selectedMeal ? (
+        
+          <FoodDetails mealDetails={mealDetails} />
+        
+      ) : selectedCatagory ? (
+        <div className="flex flex-wrap gap-5 mt-10 ml-20">
+          {catagoryfoods.length > 0 ? (
+            catagoryfoods.map((meal, index) => (
+              <FoodCard key={index} meal={meal} handleMeal={handleMeal} />
+            ))
+          ) : (
+            <div>Error! Catogories foods not found</div>
+          )}
+        </div>
+      ):(<div className="ml-20 mt-10">select the catagory</div>)}
     </div>
   );
 };
