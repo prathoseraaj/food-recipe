@@ -20,89 +20,90 @@ const FoodDetails = ({ mealDetails }) => {
           <div className="h-[300px] w-[50%] bg-white shadow-lg">
             <div className="mt-5 ml-5">
               <h1 className="text-[17px]">Ingredients:</h1>
-              <div className="flex flex-row gap-20">
+              <div className="flex flex-row gap-10">
                 <ul>
-                  <li>
-                    {mealDetails.strIngredient1}
-                    {mealDetails.strMeasure1}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient1}</span>
+                    <span>{mealDetails.strMeasure1}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient2}
-                    {mealDetails.strMeasure2}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient2}</span>
+                    <span>{mealDetails.strMeasure2}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient3}
-                    {mealDetails.strMeasure3}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient3}</span>
+                    <span>{mealDetails.strMeasure3}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient4}
-                    {mealDetails.strMeasure4}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient4}</span>
+                    <span>{mealDetails.strMeasure4}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient5}
-                    {mealDetails.strMeasure5}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient5}</span>
+                    <span>{mealDetails.strMeasure5}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient6}
-                    {mealDetails.strMeasure6}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient6}</span>
+                    <span>{mealDetails.strMeasure6}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient7}
-                    {mealDetails.strMeasure7}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient7}</span>
+                    <span>{mealDetails.strMeasure7}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient8}
-                    {mealDetails.strMeasure8}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient8}</span>
+                    <span>{mealDetails.strMeasure8}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient9}
-                    {mealDetails.strMeasure9}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient9}</span>
+                    <span>{mealDetails.strMeasure9}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient10}
-                    {mealDetails.strMeasure10}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient10}</span>
+                    <span>{mealDetails.strMeasure10}</span>
                   </li>
                 </ul>
+
                 <ul>
-                  <li>
-                    {mealDetails.strIngredient11}
-                    {mealDetails.strMeasure11}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient11}</span>
+                    <span>{mealDetails.strMeasure11}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient12}
-                    {mealDetails.strMeasure12}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient12}</span>
+                    <span>{mealDetails.strMeasure12}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient13}
-                    {mealDetails.strMeasure13}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient13}</span>
+                    <span>{mealDetails.strMeasure13}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient14}
-                    {mealDetails.strMeasure14}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient14}</span>
+                    <span>{mealDetails.strMeasure14}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient15}
-                    {mealDetails.strMeasure15}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient15}</span>
+                    <span>{mealDetails.strMeasure15}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient16}
-                    {mealDetails.strMeasure16}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient16}</span>
+                    <span>{mealDetails.strMeasure16}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient17}
-                    {mealDetails.strMeasure17}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient17}</span>
+                    <span>{mealDetails.strMeasure17}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient18}
-                    {mealDetails.strMeasure18}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient18}</span>
+                    <span>{mealDetails.strMeasure18}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient19}
-                    {mealDetails.strMeasure19}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient19}</span>
+                    <span>{mealDetails.strMeasure19}</span>
                   </li>
-                  <li>
-                    {mealDetails.strIngredient20}
-                    {mealDetails.strMeasure20}
+                  <li className="flex gap-2">
+                    <span>{mealDetails.strIngredient20}</span>
+                    <span>{mealDetails.strMeasure20}</span>
                   </li>
                 </ul>
               </div>
