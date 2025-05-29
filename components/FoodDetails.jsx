@@ -123,7 +123,7 @@ const FoodDetails = ({ mealDetails }) => {
         <div className="h-[500px] w-[75%] bg-white shadow-lg">
           <div className="mt-5 ml-5">
             <h1 className="text-[17px]">Instruction:</h1>
-            <div>
+            <div className="mt-10">
               <ReactMarkdown remarkPlugins={[remarkBreaks]}>
                 {mealDetails.strInstructions}
               </ReactMarkdown>
