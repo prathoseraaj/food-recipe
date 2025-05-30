@@ -1,16 +1,17 @@
-import React, {  ReactNode } from "react";
-
-const layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <>
-    <div>
-    <nav className=' w-[100%] h-[7vh] flex items-center pl-10'>
-            <h1 className='font-bold text-[20px]'>Food-Recipe</h1>
-        </nav>
-      {children}
-    </div>
+      <nav className="w-full h-[7vh] flex items-center pl-10 bg-white">
+        <h1 className="font-bold text-[20px]">Food-Recipe</h1>
+      </nav>
+
+      <main className="flex-grow">{children}</main>
+
+      <footer className="bg-black text-white w-full p-4">
+        <h1>Food Recipe</h1>
+      </footer>
     </>
   );
 };
 
-export default layout;
+export default Layout;
