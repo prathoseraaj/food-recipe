@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 
       <main className="flex-grow">{children}</main>
 
-      <footer className="bg-black text-white w-full p-4 flex justify-center mt-20 ">
+      <footer className="bg-black text-white w-full p-4 flex justify-center mt-40 ">
         <h1>©Food Recipe . All rights reserved</h1>
       </footer>
     </>
