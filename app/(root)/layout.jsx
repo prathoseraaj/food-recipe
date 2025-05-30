@@ -1,7 +1,7 @@
 const Layout = ({ children }) => {
   return (
     <>
-      <nav className="w-full h-[7vh] flex items-center pl-10 bg-white">
+      <nav className="w-full h-[7vh] flex items-center pl-10 mb-5 text-white bg-blue-900">
         <h1 className="font-bold text-[20px]">Food-Recipe</h1>
       </nav>
 
